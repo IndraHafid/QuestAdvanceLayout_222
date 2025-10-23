@@ -68,6 +68,9 @@ fun AktivitasPertama(modifier: Modifier) {
             }
             Box(
 
+            ) {
+                Text(
+
                 )
             }
         }
