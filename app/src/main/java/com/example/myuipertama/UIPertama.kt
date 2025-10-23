@@ -66,6 +66,10 @@ fun AktivitasPertama(modifier: Modifier) {
                     )
                 }
             }
+            Box(
 
+                )
+            }
+        }
     }
 }
