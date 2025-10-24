@@ -66,17 +66,43 @@ fun AktivitasPertama(modifier: Modifier) {
                     )
                 }
             }
-            Box(
-                modifier = Modifier
-                    .fillMaxSize()
-            ) {
-                Text(
-                    text = stringResource(id = R.string.copy),
+        }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )
+        ) {
+            Row {
+                val gambar = painterResource(id = R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
                     modifier = Modifier
-                        .align(Alignment.BottomCenter)
-                        .padding(bottom = 50.dp)
+                        .size(100.dp)
+                        .padding(all = 5.dp)
+
                 )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column {
+
+                }
             }
+        }
+
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(id = R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
         }
     }
 }
